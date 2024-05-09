@@ -5,26 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q'Marshall - Taxi Directory</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Overall Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Q'Marshall</h1>
-        <p>An online platform that connects commuters with a reliable taxi directory in the city of Johannesburg</p>
+        <div class="container">
+            <h1>Q'Marshall</h1>
+            <p>An online platform that connects commuters with a reliable taxi directory in the city of Johannesburg</p>
+        </div>
     </header>
     
     <nav>
         <ul>
-            <li><a href="#search">Search</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#app">Get the App</a></li>
+            <li><a href="#search"><span class="icon">🔍</span>Search</a></li>
+            <li><a href="#features"><span class="icon">🚀</span>Features</a></li>
+            <li><a href="#about"><span class="icon">ℹ️</span>About</a></li>
+            <li><a href="#app"><span class="icon">📱</span>Get the App</a></li>
         </ul>
     </nav>
+    
 
     <main>
         <section id="search">
-            <h2>Taxi Ranks</h2>
-            <input type="text" id="search-input" placeholder="Search destination...">
+            <h2>Destination</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search destination...">
+            </div>
             <ul id="taxi-stations">
                 <!-- Taxi station list will be dynamically populated here -->
             </ul>
@@ -32,20 +152,31 @@
 
         <section id="features">
             <h2>Key Features</h2>
-            <div class="feature">
-                <img src="feature1.jpg" alt="Feature 1">
-                <h3>Real-Time Updates</h3>
-                <p>Stay informed about taxi availability and routes in real-time, ensuring minimal waiting time.</p>
-            </div>
-            <div class="feature">
-                <img src="feature2.jpg" alt="Feature 2">
-                <h3>User Reviews</h3>
-                <p>Read and contribute to user reviews to help others make informed decisions about taxi services.</p>
-            </div>
-            <div class="feature">
-                <img src="feature3.jpg" alt="Feature 3">
-                <h3>Bookmarking</h3>
-                <p>Save your favorite taxi stations for quick access and planning your daily commute.</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <!-- An animated illustration or interactive element can go here -->
+                        <img src="feature1.gif" alt="Feature 1">
+                    </div>
+                    <h3>Real-Time Updates</h3>
+                    <p>Stay informed about taxi availability and routes in real-time, ensuring minimal waiting time.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <!-- An animated illustration or interactive element can go here -->
+                        <img src="feature2.gif" alt="Feature 2">
+                    </div>
+                    <h3>User Reviews</h3>
+                    <p>Read and contribute to user reviews to help others make informed decisions about taxi services.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <!-- An animated illustration or interactive element can go here -->
+                        <img src="feature3.gif" alt="Feature 3">
+                    </div>
+                    <h3>Bookmarking</h3>
+                    <p>Save your favorite taxi stations for quick access and planning your daily commute.</p>
+                </div>
             </div>
         </section>
     </main>
