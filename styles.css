@@ -29,9 +29,9 @@ p {
 }
 
 #search-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 40%;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -95,9 +95,27 @@ nav ul li a:hover {
 }
 
 #about {
-    background-color: #f9f9f9;
-    padding: 20px;
+    color: #ffffff; /* Set text color to black */
     text-align: center;
+    margin: 0 auto; /* Center the entire section horizontally */
+    max-width: 800px; /* Adjust the maximum width of the section */
+}
+
+#about h2 {
+    color: #ffffff; /* Set text color to black */
+}
+
+#about p,
+#about ul {
+    color: #ffffff; /* Set text color to black */
+}
+
+#about a {
+    color: #6c6a6a; /* Set link color to black */
+}
+
+#about a:hover {
+    color: #ff6f00; /* Set link hover color to orange */
 }
 
 /* Header Design */
@@ -184,6 +202,7 @@ nav ul li a:hover {
 .feature-icon img {
     max-width: 100%;
 }
+
 /* Overall Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -251,4 +270,50 @@ footer {
     text-align: center;
     margin-top: 30px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    max-width: 200px; /* Adjust the maximum width of the logo */
+    margin-bottom: 20px; /* Adjust the margin bottom of the logo */
+}
+
+/* Set text color to black in Key Features section */
+#features {
+    color: #000; /* Set text color to black */
+}
+
+#features h3,
+#features p {
+    color: #000; /* Set text color to black */
+}
+.feature-icon img {
+    max-width: 50%; /* Ensure the image resizes proportionally to fit its container */
+    max-height: 100px; /* Set the maximum height of the image */
+}
+/* Key Features Section */
+#features {
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add transition effect for transform */
+}
+
+/* Add hover effect */
+.feature:hover {
+    transform: translateY(-5px); /* Move the feature up by 5px on hover */
 }
