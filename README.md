@@ -5,7 +5,7 @@
 Q'Marshall Taxi Directory is an online platform designed to connect commuters in Johannesburg with a reliable taxi directory. Our goal is to streamline the commuting experience by providing real-time updates on taxi availability and routes, user reviews, and the latest public transport news. This project reflects our commitment to improving urban transportation in Johannesburg.
 
 - **Live Site:** [Q'Marshall Taxi Directory](https://example.com)
-- **Blog Article:** [Final Project Blog Article](https://example.com/blog)
+- **Blog Article:** [Final Project Blog Article](https://www.linkedin.com/pulse/introducing-qmarshall-real-time-public-transport-updates-tebogo-gema-nv7qf/)
 - **Author's LinkedIn:** [Tebogo Gema](https://www.linkedin.com/in/tebogo-gema-70aa46277/)
 
 ## Installation
